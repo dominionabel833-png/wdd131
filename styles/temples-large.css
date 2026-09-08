@@ -1,0 +1,27 @@
+/* Desktop View */
+@media (min-width: 600px) {
+    #hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 2rem;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .navigation li a {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}

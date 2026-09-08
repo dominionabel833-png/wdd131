@@ -1,0 +1,115 @@
+/* Color Scheme & Mobile Styles */
+:root {
+    --primary-color: #0d3b66;
+    --secondary-color: #f4d35e;
+    --background-color: #faf0ca;
+    --text-color: #0d1b2a;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Hamburger Button */
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Main Layout & CSS Grid */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
