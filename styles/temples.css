@@ -1,31 +1,33 @@
-/* Color Scheme & Mobile Styles */
-:root {
-    --primary-color: #0d3b66;
-    --secondary-color: #f4d35e;
-    --background-color: #faf0ca;
-    --text-color: #0d1b2a;
-    --font-family: 'Roboto', sans-serif;
-}
-
-body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-color);
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Header & Hamburger Button */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
 header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+}
+
+.header-container span {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -33,65 +35,65 @@ header {
 #hamburger {
     background: none;
     border: none;
-    color: white;
+    color: #fff;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* Navigation Menu */
 nav {
-    background-color: var(--primary-color);
+    margin-top: 1rem;
 }
 
 .navigation {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-}
-
-.navigation.open {
+    list-style: none;
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.navigation li a {
-    display: block;
-    padding: 1rem;
-    color: white;
+.navigation a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: block;
     text-align: center;
 }
 
-.navigation li a:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    font-weight: bold;
+.navigation a:hover {
+    background-color: #0055a5;
+    border-radius: 4px;
 }
 
-/* Main Layout & CSS Grid */
+/* Main Content */
 main {
-    max-width: 900px;
-    margin: 0 auto;
+    flex: 1;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 1.5rem;
+    color: #003366;
 }
 
+/* Gallery Grid */
 .res-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 figure {
-    margin: 0;
-    background-color: white;
+    background-color: #f4f4f4;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 figure img {
@@ -101,15 +103,20 @@ figure img {
 }
 
 figcaption {
-    padding: 0.5rem;
-    font-size: 0.95rem;
+    padding: 0.75rem;
+    font-weight: bold;
+    background-color: #fff;
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #003366;
+    color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
 }
