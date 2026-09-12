@@ -95,26 +95,31 @@ h1 {
 }
 
 figure {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 8px;
     padding: 1rem;
     margin: 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 figcaption {
     color: #003366;
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
 }
 
+/* Uniform image framing (removes gaps and fills container) */
 figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
+    border-radius: 4px;
+    display: block;
 }
 
 /* --- Footer Layout --- */
