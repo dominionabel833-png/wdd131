@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page - Madagascar</title>
+  <meta name="description" content="WDD 131 Country Page Assignment showcasing responsive design, WebP images, and dynamic weather data.">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/place_large.webp" media="(min-width: 600px)">
+        <img src="images/place-small.webp" alt="Landscape of Madagascar" width="500" height="300">
+      </picture>
+    </div>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><span class="label">Area:</span> 587,041 sq km</li>
+        <li><span class="label">Population:</span> ~27.7 Million</li>
+        <li><span class="label">Capital:</span> Antananarivo</li>
+        <li><span class="label">Languages:</span> Malagasy, French</li>
+        <li><span class="label">Currency:</span> Malagasy Ariary</li>
+        <li><span class="label">Time Zone:</span> UTC+3</li>
+        <li><span class="label">Calling Code:</span> +261</li>
+        <li><span class="label">Internet TLD:</span> .mg</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+      <ul>
+        <li><span class="label">Temperature:</span> <span id="temp">10</span> °C</li>
+        <li><span class="label">Conditions:</span> Partly Cloudy</li>
+        <li><span class="label">Wind:</span> <span id="wind">5</span> km/h</li>
+        <li><span class="label">Wind Chill:</span> <span id="windchill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Your Name | Location</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
