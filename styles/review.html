@@ -3,39 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Confirmation</title>
+    <title>Review Results</title>
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-
     <header>
-        <h1>Review Submitted!</h1>
+        <h1>Review Submitted Successfully!</h1>
     </header>
-
     <main>
-        <section class="confirmation-container">
-            <h2>Thank you for your review!</h2>
-            <p>Your review has been successfully submitted.</p>
-            <p>Total reviews submitted by you: <span id="counter">0</span></p>
-            <br>
-            <a href="form.html" class="button">Submit Another Review</a>
-        </section>
+        <p>Thank you for submitting your product review.</p>
+        <p><a href="form.html">Submit another review</a></p>
     </main>
-
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Your Name</p>
+        <p>&copy; <span id="currentyear"></span> | Abel Dominion</p>
     </footer>
-
-    <script>
-        // 1. Local Storage Review Counter
-        let reviewCount = Number(window.localStorage.getItem("reviewCount-ls")) || 0;
-        reviewCount++;
-        localStorage.setItem("reviewCount-ls", reviewCount);
-        
-        document.querySelector("#counter").textContent = reviewCount;
-
-        // 2. Footer Year
-        document.querySelector("#currentyear").textContent = new Date().getFullYear();
-    </script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>

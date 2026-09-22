@@ -1,9 +1,9 @@
-*<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 Temple Album displaying responsive temple images and dynamic filtering.">
+    <meta name="description" content="WDD 131 Filtered Temple Album displaying responsive temple images and dynamic filters.">
     <meta name="author" content="Abel Dominion">
     <title>Filtered Temple Album</title>
     <!-- Google Fonts -->
@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
     <!-- JS Script -->
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
@@ -35,8 +34,9 @@
 
     <main>
         <h1>Temple Gallery</h1>
-        <!-- This container will be filled dynamically by your JavaScript -->
-        <div class="res-grid"></div>
+        <div class="res-grid">
+            <!-- JavaScript will dynamically generate and inject temple cards here -->
+        </div>
     </main>
 
     <footer>
