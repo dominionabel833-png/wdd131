@@ -76,7 +76,7 @@ nav a:hover {
 
 /* --- Main Content Layout --- */
 main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
@@ -86,7 +86,7 @@ h1 {
     color: #003366;
 }
 
-/* --- Gallery Cards (CSS Grid Layout) --- */
+/* --- Gallery Cards (CSS Grid Layout for Dynamic Sections) --- */
 .res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,11 +94,11 @@ h1 {
     margin-top: 1.5rem;
 }
 
-figure {
+.res-grid section {
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -107,19 +107,34 @@ figure {
     justify-content: space-between;
 }
 
-figcaption {
+.res-grid section h3 {
     color: #003366;
-    font-weight: bold;
-    margin-top: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
 }
 
-/* Uniform image framing (removes gaps and fills container) */
-figure img {
+.res-grid section p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+/* Styling the dynamic labels created in JavaScript */
+.label {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Uniform image framing inside the cards */
+.res-grid section img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     border-radius: 4px;
     display: block;
+    margin-top: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Footer Layout --- */

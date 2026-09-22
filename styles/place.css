@@ -41,7 +41,7 @@ h2::after {
 }
 
 /* Hide the weather icon SVG by default (desktop view), show only on mobile */
-.weather-icon {
+.weather-icon-mobile {
   display: none;
 }
 
@@ -57,7 +57,7 @@ h2::after {
   }
 
   /* Show the weather emoticon using a pseudo-element only in the desktop view */
-  .weather-section::after {
+  .weather::after {
     content: " ☀️";
     display: inline-block;
   }
@@ -65,7 +65,7 @@ h2::after {
 
 @media (max-width: 599px) {
   /* Show the weather icon SVG only in the mobile view */
-  .weather-icon {
+  .weather-icon-mobile {
     display: block;
   }
 }
