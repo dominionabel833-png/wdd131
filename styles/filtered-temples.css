@@ -172,7 +172,7 @@ footer p {
     }
 
     .navigation {
-        display: flex !important; /* Force navigation to show horizontally */
+        display: flex; /* Display horizontally on desktop without !important */
         flex-direction: row;
     }
 }
