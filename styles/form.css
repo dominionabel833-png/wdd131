@@ -71,3 +71,10 @@ input[type="submit"], .button {
 input[type="submit"]:hover, .button:hover {
     background-color: #2c5282;
 }
+
+/* Media Query for Responsive Design */
+@media (min-width: 640px) {
+    main {
+        max-width: 600px;
+    }
+}
