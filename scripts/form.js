@@ -1,33 +1,33 @@
-// 1. Array of Product Objects
+// 1. Array of Product Objects (Official Course Data)
 const products = [
   {
-    id: "fc-200",
-    name: "Flux Capacitor (FC-200)",
+    id: "fc-1888",
+    name: "flux capacitor",
     averagerating: 4.5
   },
   {
-    id: "pcr-3000",
-    name: "Power Converter 3000",
+    id: "fc-2050",
+    name: "power laces",
     averagerating: 4.7
   },
   {
-    id: "hnd-500",
-    name: "Hoverboard X-500",
+    id: "fs-1987",
+    name: "time circuits",
     averagerating: 3.5
   },
   {
-    id: "ap-900",
-    name: "Aero-Propulsion Unit",
-    averagerating: 4.8
+    id: "ac-2000",
+    name: "low voltage reactor",
+    averagerating: 3.9
   },
   {
-    id: "qg-101",
-    name: "Quantum Generator",
-    averagerating: 4.2
+    id: "jj-1969",
+    name: "warp equalizer",
+    averagerating: 5.0
   }
 ];
 
-// 2. Dynamically Populate the Product Select Options
+// 2. Dynamically Populate the Product Select Options (on form.html)
 const productSelect = document.querySelector("#productName");
 
 if (productSelect) {
@@ -39,7 +39,24 @@ if (productSelect) {
   });
 }
 
-// 3. Footer Dynamic Year
+// 3. LocalStorage Counter (on review.html)
+const reviewCountDisplay = document.querySelector("#reviewCount");
+
+if (reviewCountDisplay) {
+  // Get current count from localStorage or initialize to 0
+  let reviewCount = Number(window.localStorage.getItem("reviewCount-ls")) || 0;
+  
+  // Increment count
+  reviewCount++;
+  
+  // Store updated count back to localStorage
+  window.localStorage.setItem("reviewCount-ls", reviewCount);
+  
+  // Display count on page
+  reviewCountDisplay.textContent = reviewCount;
+}
+
+// 4. Footer Dynamic Year
 const currentYearSpan = document.querySelector("#currentyear");
 if (currentYearSpan) {
   currentYearSpan.textContent = new Date().getFullYear();
