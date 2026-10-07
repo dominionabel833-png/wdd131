@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailBlazers Nature Club - Join & Contact</title>
+    <meta name="description" content="Contact TrailBlazers Nature Club or sign up for a membership.">
+    <meta name="author" content="Abel Dominion">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>TrailBlazers Nature Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="contact.html" class="active">Join / Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-hero">
+            <h2>Join Our Club or Reach Out</h2>
+            <p>Fill out the form below to become a member or send us an inquiry.</p>
+        </section>
+
+        <section class="form-container">
+            <form id="contactForm" action="contact.html" method="GET">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="experience">Hiking Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select your level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+
+                <label for="message">Comments / Questions:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="cta-button">Submit Application</button>
+            </form>
+            <div id="form-feedback" style="margin-top: 20px; font-weight: bold;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Abel Dominion | WDD 131 - TrailBlazers Nature Club</p>
+    </footer>
+</body>
+</html>

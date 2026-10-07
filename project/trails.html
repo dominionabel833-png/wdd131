@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailBlazers Nature Club - Trails</title>
+    <meta name="description" content="Explore hiking trails recommended by TrailBlazers Nature Club.">
+    <meta name="author" content="Abel Dominion">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>TrailBlazers Nature Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trails.html" class="active">Trails</a></li>
+                <li><a href="contact.html">Join / Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="trails-hero">
+            <h2>Featured Hiking Trails</h2>
+            <p>Explore our curated list of regional trails, lengths, difficulty levels, and highlights.</p>
+        </section>
+
+        <!-- Dynamic trail cards will be injected here via JavaScript using arrays and template literals -->
+        <section id="trail-container" class="grid-container">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Abel Dominion | WDD 131 - TrailBlazers Nature Club</p>
+    </footer>
+</body>
+</html>
